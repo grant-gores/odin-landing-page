@@ -1,0 +1,11 @@
+--2024-12-26 14:15:51--  https://images.unsplash.com/photo-1433757741270-94a3bcadc2f3?q=80
+Resolving images.unsplash.com (images.unsplash.com)... 151.101.150.208, 2a04:4e42:23::720
+Connecting to images.unsplash.com (images.unsplash.com)|151.101.150.208|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2238741 (2.1M) [image/jpeg]
+Saving to: ‘oslo.jpg’
+
+oslo.jpg             0%[                 ]       0  --.-KB/s               oslo.jpg            11%[=>               ] 260.55K  1.19MB/s               oslo.jpg            25%[===>             ] 548.55K  1.28MB/s               oslo.jpg            39%[=====>           ] 868.55K  1.37MB/s               oslo.jpg            56%[========>        ]   1.21M  1.47MB/s               oslo.jpg            73%[===========>     ]   1.57M  1.52MB/s               oslo.jpg            93%[==============>  ]   2.00M  1.62MB/s               oslo.jpg           100%[================>]   2.13M  1.65MB/s    in 1.3s    
+
+2024-12-26 14:15:54 (1.65 MB/s) - ‘oslo.jpg’ saved [2238741/2238741]
+
