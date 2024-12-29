@@ -7,13 +7,15 @@
 .hero {
     color:#eee;
     background-color: #1F2937;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 150px;
 }
 
 .hero-1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Roboto';
 }
 
 .hero-1 h3 {
@@ -25,12 +27,68 @@
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
+    margin-bottom: 0;
+
 }
 
 .hero-2 p {
     font-size: 18px;
     color: #E5e7EB;
+    margin-top: 0;
 }
+
+.hero-2 {
+    display: flex;
+    gap: 30px; /* Optional: Add space between text and image */
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hero-2-text {
+    flex: 1 1 500px; /* Fix width to 500px */
+    min-width: 0; /* Prevent shrinking below the content size */
+}
+
+.hero-2-text .button .sign-up{
+    color: white;
+    border-radius: 8px;
+    border-color: #3882F6;
+    background-color: #3882F6;
+    padding: 5px 20px;
+}
+
+.hero-2-image {
+    flex: 1 1 500px; /* Fix width to 500px */
+    min-width: 0; /* Prevent shrinking below the content size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-2-image img {
+    max-width: 100%; /* Scale image to container width */
+    max-height: 100%; /* Scale image to container height */
+    object-fit: cover; /* Maintain aspect ratio while covering area */
+}
+
+@media (max-width: 768px) {
+    .hero-2 {
+        flex-direction: column; /* Stack vertically */
+        gap: 20px; /* Smaller gap for mobile */
+    }
+
+    .hero-2-text,
+    .hero-2-image {
+        flex: 1 1 100%; /* Take up full width */
+        max-width: 100%; /* Ensure no width constraints */
+    }
+
+    .hero {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 
 .footer {
     background-color: #1F2937;
