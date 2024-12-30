@@ -91,7 +91,7 @@ a {
 /* ------------------ */
 /* Random Info Start */
 
-.random-info{
+.random-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,28 +99,45 @@ a {
     padding-bottom: 60px;
 }
 
-.random-info h2{
+.random-info h2 {
     color: black;
     font-size: 36px;
     font-weight: 900;
+    text-align: center;
 }
 
 .info {
     display: flex;
     gap: 30px;
-}
-
-.info-subtext{
-    display: flex;
-    gap: 30px;
+    justify-content: center;
 }
 
 .card {
+    width: 200px;
+    height: 200px;
     border: 1px solid #3882F6;
-    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
     color: white;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px; /* Space between card and subtext */
+}
+
+.subtext {
+    max-width: 200px;
+    font-size: 14px;
+    text-align: center;
+}
 
 /* Random Info End */
 /* ------------------ */
@@ -175,5 +192,11 @@ a {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .info {
+        flex-direction: column; /* Stack vertically */
+        gap: 20px; /* Smaller gap for mobile */
+    }
+
 }
 /* Mobile Layout End */
