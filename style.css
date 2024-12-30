@@ -1,3 +1,9 @@
+/* Reset body and html margins and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 .body {
     display: flex;
     flex-direction: column;
@@ -28,14 +34,14 @@
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 
 }
 
 .hero-2 p {
     font-size: 18px;
     color: #E5e7EB;
-    margin-top: 0;
+    margin-top: 0px;
 }
 
 .hero-2 {
@@ -110,6 +116,7 @@ a {
     display: flex;
     gap: 30px;
     justify-content: center;
+    padding: 0px 100px 0px 100px;
 }
 
 .card {
@@ -145,6 +152,21 @@ a {
 
 .quote {
     background-color: #E5E7EB;
+    padding: 60px 200px 60px 200px;
+}
+
+.quote .quotes {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: 100;
+    text-align: left;
+}
+
+.quote .author {
+    color: #1F2937;
+    font-weight: 900;
+    text-align: right;
 }
 
 /* Quote End */
@@ -153,6 +175,24 @@ a {
 
 .call-to-action {
     background-color: #3882F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 90px;
+    padding: 50px 80px;
+}
+
+.call-to-action-text {
+    color: white;
+}
+
+.call-to-action-text .call {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.call-to-action-text .action {
+    margin-top: 0px;
 }
 
 .call-to-action .button .sign-up{
@@ -170,6 +210,8 @@ a {
 .footer {
     background-color: #1F2937;
     color: white;
+    text-align: center;
+    padding: 20px 0px;
   }
 
 /* Footer End */
@@ -186,6 +228,7 @@ a {
     .hero-2-image {
         flex: 1 1 100%; /* Take up full width */
         max-width: 100%; /* Ensure no width constraints */
+        text-align: center;
     }
 
     .hero {
@@ -198,5 +241,19 @@ a {
         gap: 20px; /* Smaller gap for mobile */
     }
 
+    .quote {
+        background-color: #E5E7EB;
+        padding: 20px 20px;
+    }
+
+    .call-to-action {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin: 10px 40px;
+        padding: 100px 40px;
+    }
 }
 /* Mobile Layout End */
